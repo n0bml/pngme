@@ -9,6 +9,7 @@ fn is_valid_byte(byte: u8) -> bool {
         false
     }
 }
+
 /// Byte representation of a PNG version 1.2 Chunk.
 /// `ChunkType` provides validation for a PNG version 1.2
 /// chunk, also provides construction and conversion for the
