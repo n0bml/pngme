@@ -9,6 +9,7 @@ fn is_valid_byte(byte: u8) -> bool {
         false
     }
 }
+
 /// Byte representation of a PNG version 1.2 Chunk.
 /// `ChunkType` provides validation for a PNG version 1.2
 /// chunk, also provides construction and conversion for the
@@ -27,7 +28,7 @@ fn is_valid_byte(byte: u8) -> bool {
 /// [Source](http://www.libpng.org/pub/png/spec/1.2/PNG-Structure.html)
 ///
 #[derive(Debug, Clone, PartialEq, Eq)]
-struct ChunkType([u8; 4]);
+pub struct ChunkType([u8; 4]);
 
 impl ChunkType {
     pub fn bytes(&self) -> [u8; 4] {
